@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html lang="ja"> 
+
+<!-- Mirrored from jool.co.jp/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2023 10:20:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1"> 
+<meta name="format-detection" content="telephone=no">
+<title>神秘の温泉水から生まれた高級基礎化粧品と水｜ジェイオール株式会社</title>
+<meta name="keywords" content="化粧品,基礎化粧品,温泉,温泉水,Cosmetics,水,Water">
+<meta name="description" content="ジェイオール株式会社では、神秘の温泉水「ことほぎ温泉水」で構成した高級基礎化粧品と水を製造販売しています。">
+<meta name="facebook-domain-verification" content="vkhfuhvbi0krroscsf3twildp3nmi8" />
+<!--[if lt IE 9]>
+<script src="file:///cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="file:///cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../cdn.jsdelivr.net/gh/michalsnik/aos%402.1.1/dist/aos.css" rel="stylesheet">
+<script src="../cdn.jsdelivr.net/npm/jquery%403.1.1/dist/jquery.min.js"></script>
+<script src="../cdn.jsdelivr.net/npm/jquery-scrollify%401/jquery.scrollify.min.js"></script>
+<script src="../unpkg.com/swiper%407.4.1/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/jquery.scrollshow.js"></script>
+<script src="js/matchHeight.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41TML3BDF2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-41TML3BDF2');
+</script>
+
+<script>
+
+$(function(){
+
+    var windowHeight = $(window).height();
+    $("#top").height(windowHeight);
+
+    $('html').smoothscroll({
+        easing      : 'swing',
+        speed       : 500,
+        margintop   : 0,
+        headerfix   : '',
+        outersmooth : true
+    });
+    
+    $('.totop').scrollshow({position : 400});
+    
+});
+
+$(window).on('load', function(){
+
+    AOS.init({
+    /*once: true,*/
+    });
+    
+    var mySwiper = new Swiper ('.swiper', {
+    autoplay: {
+      delay: 2000,
+      stopOnLastSlide: true,
+    },
+	speed: 3000,
+	loopedSlides: 10,
+	effect: 'fade',
+   });   
+
+
+});
+
+$(window).on('scroll', function(){
+});
+    
+$(window).on('resize', function(){
+
+    var windowHeight = $(window).height();
+    $("#top").height(windowHeight);
+
+});
+
+$(window).on('load scroll resize', function() {
+   let scrollTop = $(window).scrollTop(); // スクロール上部の位置
+   let scrollBottom = scrollTop + $(window).height() // スクロール下部の位置
+    let areaTop_eclead = $(".target-area-eclead").offset().top; // 対象エリアの上部の位置 
+   let areaBottom_eclead = areaTop_eclead + $(".target-area-eclead").innerHeight(); // 対象エリアの下部の位置
+   let areaTop_water = $(".target-area-water").offset().top; // 対象エリアの上部の位置 
+   let areaBottom_water = areaTop_water + $(".target-area-water").innerHeight(); // 対象エリアの下部の位置
+
+    if (scrollBottom > areaTop_eclead && scrollBottom < areaBottom_eclead)  {
+		$("body").addClass("is-in-eclead");// スクロールが対象エリアに入った場合
+   	} else {
+		$("body").removeClass("is-in-eclead"); // スクロールが対象エリアから出ている場合
+	}
+    if (scrollBottom > areaTop_water && scrollBottom < areaBottom_water) {
+        $("body").addClass("is-in-water");// スクロールが対象エリアに入った場合
+	} else {
+  	    $("body").removeClass("is-in-water"); // スクロールが対象エリアから出ている場合
+
+	}
+
+});
+
+$(window).on('load resize', function() {
+	var w = $(window).width();
+	var x = 768;
+	if (w > x) {
+		$('.story-Box-inner-box .text-t').matchHeight();
+	}
+});
+
+      
+</script>
+
+</head>
+
+<body>
+
+<div id="loading">
+    
+    <div id="loading_barWrap">
+        <img alt="logo" src="images/logo.png">
+        <p class="text"></p>
+        <div id="loading_bar"></div>
+    </div>
+</div>
+<script>
+var images1 = document.getElementsByTagName('video');
+var images2 = document.getElementsByTagName('img');
+var images = images1 + images2;
+console.log(images);
+var loadingBar = document.getElementById('loading_bar');
+var loadingWrap = document.getElementById('loading_barWrap');
+var loadingArea = document.getElementById('loading');
+
+var imgLen = images.length;
+var barLen = 100 / imgLen;
+console.log(barLen);
+var barWidth = 0;
+
+for (var i = 0; i < imgLen; i++) {
+    images[i].onload = function() {
+console.log(images[i]);
+barWidth = barWidth + barLen;
+loadingBar.style.width = barWidth + '%';
+    }
+}
+
+function loadLen() {
+    if (!loadingArea.classList.contains('loadingNone')) {
+if (loadingBar.clientWidth === loadingWrap.clientWidth) {
+    loadingArea.classList.add('loadingNone');
+} else {
+    setTimeout(loadLen, 1000);
+}
+    }
+}
+
+loadLen();
+
+// 100%にならなかった時用の処理
+window.addEventListener('load', function(){
+  if (!loadingArea.classList.contains('loadingNone')) {
+    loadingBar.style.width = '100%';
+    setTimeout(function(){
+      loadingArea.classList.add('loadingNone');
+    }, 1000);
+  }
+});
+</script>
+
+<div id="top">
+  
+  <section>
+    <div class="swiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <video  class="video" src="video/top-video_2.mp4" autoplay muted playsinline></video>
+        </div>
+        <div class="swiper-slide">
+          <video  class="video" src="video/top-video_1.mp4" autoplay muted playsinline></video>
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/monokuro.png" alt="ものくろセット">
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/yorokobi.jpg"  alt="喜ぶ女性">
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/egao.jpg" alt="女性の笑顔">
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/mask.jpg" alt="マスクの女性">
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/set.jpg" alt="エクリードプレミアムシリーズ">
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/top-water_01.jpg" alt="ことほぎウォーター">
+        </div>
+        <div class="swiper-slide">
+          <img  class="video" src="images/top-water_02.jpg" alt="ことほぎウォーター">
+        </div>
+      </div>
+    </div>       
+
+    <header>
+      <h1 class="op0">高級基礎化粧品　温泉水「Kotohogi」 | ジェイオール株式会社</h1>
+      ﻿<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+      <div class="sns">
+        <ul>
+          <li>Instagram
+            <ul>
+              <li><a href="https://www.instagram.com/eclead.official" target="_blank">ECLEAD</a></li>
+              <li><a href="https://www.instagram.com/kotohogi.official" target="_blank">WATER</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.facebook.com/eclead.jool" target="_blank" >Facebook</a></li>
+          <li><a href="https://twitter.com/jool_official" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="navToggle">
+        <div>
+          <span></span> <span></span> <span></span> 
+        </div>
+      </div>
+      <div class="EN">
+        <span class="textBold textRed ">JP</span><a href="index_e.html">/EN</a><a href="index_t.html">/TH</a>
+      </div>
+     </header>
+
+﻿<div class="fullnav">
+    <div class="fullnav__nav transition10">
+        <nav class="gnav">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item transition10 delay05"><a href="index.html">HOME</a></li>
+                <li class="gnav__menu__item transition10 delay05"><a href="eclead.html">ECLEAD</a></li>
+                <li class="gnav__menu__item transition10 delay05"><a href="kotohogi.html">WATER</a></li>
+                <li class="gnav__menu__item transition10 delay07 about"><a href="index.html#profile">ABOUT</a></li>
+                <li class="gnav__menu__item transition10 delay07"><a href="contact.html">CONTACT</a></li>
+                <li class="gnav__menu__item transition10 delay07"><a href="https://cart.jool.co.jp/">ONLINE SHOP</a></li>
+            </ul>
+        </nav>
+    </div><!--fullnav__nav-->
+    <div class="fullnav__cnt transition10 delay01">
+        <div class="fullnav__cnt__inner">
+            <h3 class="fullnav__cnt__title transition10 delay07">Information</h3>
+            <ul class="fullnav__cnt__menu">
+                <li class="fullnav__cnt__menu__item transition10 delay07">2021/10/01<br>東京都港区の奈良まほろば館にて高級基礎化粧品ブランド「ECLEAD（エクリード）」スターターキット限定販売</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/01/01<br>高級基礎化粧品ブランド「ECLEAD（エクリード）」エクリードプレミアムシリーズ購入予約開始</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/02/11<br>高級基礎化粧品ブランド「ECLEAD（エクリード）」エクリードプレミアムシリーズ発売開始</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/06/04<br>奈良テレビ放送にて、高級基礎化粧品ブランド「ECLEAD（エクリード）」テレビＣＭ放送開始</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/06/06<br>高級基礎化粧品ブランド「ECLEAD（エクリード）」の海外販路を担うアジア戦力拠点の法人をタイ・バンコクに設置</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/06/22<br>高級基礎化粧品ブランド「ECLEAD（エクリード）」・温泉水「Kotohogi」が奈良県橿原市ふるさと納税返礼品に認定</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/07/11<br>温泉水「Kotohogi」が《2022 JAPAN AQUA AWARDS》にて金賞受賞</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/08/01<br>ジェイオールタイバンコク法人「JOOL Infinite(Thailand) Co., Ltd 」を設立・登記。前タイ・オリックス副社長のラタクンジャラ・チャネット氏が社長に就任</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/08/01<br>楽天市場内「なら子育て応援はぐくみストア」にて高級基礎化粧品ブランド「ECLEAD（エクリード）」販売開始</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/08/20<br>温泉水「Kotohogi」発売開始</li>
+                <li class="fullnav__cnt__menu__item transition10 delay07">2022/08/29<br>東京都港区の奈良まほろば館にて温泉水「Kotohogi」限定販売</li>
+            </ul>
+        </div><!--fullnav__cnt__inner-->
+    </div><!--fullnav__cnt-->
+</div><!--fullnav-->
+    <div class="caption-box hideMe"> 
+      <div class="caption-01" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="2500" data-aos-once="true">
+        <p>時を超える</p>
+      </div>
+      <div class="caption-02" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="2750" data-aos-once="true">
+        <p>からだへ</p>
+      </div>
+      <div class="caption-03" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="3000" data-aos-once="true">
+        <p class="fadein"><span>A body that transcends time</span></p>
+      </div>
+      <div class="caption-04" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="3000" data-aos-once="true">
+        <p class="fadein"><span>Luxury Cosmetics & Water</span></p>
+      </div>
+    </div>
+    <div class="undercaption-box hideMe" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="3000" data-aos-once="true">
+      <p>神秘<span class="sawarabi">の</span>温泉水</p>
+      <p>ー　<span class="sawarabi">ことほぎ</span>温泉　ー</p>
+    </div>
+    
+    <div class="scroll-box">
+      <a href="#cosmetics" class="scroll-box-inner-box-L" data-aos="slide-left" data-aos-duration="1500"  data-aos-anchor-placement="top-bottom" data-aos-delay="3000" data-aos-once="true">
+        <p>Cosmetics</p>
+      </a>
+      <div class="scroll-box-inner-box-C">
+        <p>Scroll</p>
+      </div>
+      <a href="#water" class="scroll-box-inner-box-R" data-aos="slide-right" data-aos-duration="1500"   data-aos-anchor-placement="top-bottom" data-aos-delay="3000" data-aos-once="true">
+        <p class="">Water</p>
+      </a>
+      <div class="scroll"></div>
+    </div>
+
+  </section>
+
+</div><!--top-->
+
+
+<div id="main">
+
+  <section class="target-area-eclead">
+  
+    <div class="top-Box">
+      <div class="top-Box-inner-top">
+        <H2 id="cosmetics">Luxury Cosmetics</H2>
+      </div>
+        <h3  data-aos="slide-right" data-aos-duration="1000">水にこだわり抜いた高級基礎化粧品<br>「エクリード」プレミアムシリーズ</h3>
+      <div class="top-Box-text">
+        <h4 class="top-Box-text" data-aos="zoom-in-up"   data-aos-delay="500" data-aos-duration="1000">温泉旅に出た翌朝のようなしっとりとした肌<br>「極潤」の実感</h4>
+        <p class="top-Box-text" data-aos="slide-left"  data-aos-duration="1000">「エクリード」プレミアムシリーズは、使用する水に徹底的にこだわりました。基礎化粧品の"主成分"となる水は、奈良・まほろばの地から湧出し、初代神武天皇をお祀りしている橿原神宮が命名した<strong>「ことほぎ温泉」</strong>の温泉水です。この温泉水には美肌効果があるとされる天然ミネラル成分が豊富に含まれ、<strong>粒子が非常に細かく肌の角質層に浸透しやすい特性</strong>があり、そのままでも<strong>「天然の美容液」</strong>と言えます。この温泉水を独自技術で<strong>５倍に濃縮</strong>することで、天然ミネラル成分の肌への効能をさらに引き出すことに成功しました。この濃厚な神秘の温泉水に厳選した<strong>エイジングケアの美容成分７０種類以上を贅沢に配合</strong>し誕生したのが「エクリード」プレミアムシリーズです。</p>
+        <h3  data-aos="zoom-in-up" data-aos-delay="1000"  data-aos-duration="1000">ー　月産３,０００セット限定販売　ー</h3>
+        <p data-aos="zoom-in-up" data-aos-delay="1000"  data-aos-duration="1000">【お願い】<br>ジェイオールが手掛けるエクリードプレミアムシリーズの主原料は水ではなく天然ミネラル成分が非常に多い、ことほぎ温泉水です。温泉旅の翌朝の効果がそのまま得られるよう、天然温泉水をベースにすることにこだわっています。奈良県橿原市から湧出した「ことほぎ温泉」は、天然美肌成分を豊富に含有した貴重な自然の恵みです。<span class="underline-red">湧出量が限られているため、月産３,０００セットの限定生産になります。</span>限定生産数に達し品切れの際は、翌月分以降のご注文、お届けになりますこと、ご理解賜りますようお願い申し上げます。リピーターのお客様については、優先確保をさせていただきます。</p>
+      </div>
+      <div class="top-Box-inner-LRbox">
+        <div class="top-Box-inner-right-eclead" data-aos="zoom-in-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
+          <div data-aos="zoom-in-up" data-aos-duration="1000">
+          <h5>神秘の温泉水から生まれた高級基礎化粧品</h5>
+          <p><span>極潤</span><span class="fs05em">の</span><span>実感</span></p>
+          </div>
+          <h6  data-aos="slide-left" data-aos-duration="1000"><span>ECLEAD</span></h6>
+          <div class="top-Box-inner-right-eclead-box-up" data-aos="slide-right" data-aos-duration="1000">
+            <div class="top-Box-inner-right-eclead-box-inner-box-up">
+              <img class="" src="images/premiumseriesfull.jpg" alt="プレミアムシリーズフルセット">
+              <p>premium series full set</p>
+              <p>プレミアムシリーズ　フルセット<br><br>ローション１本＋エッセンス１本＋エマルジョン１本＋フェイス＆デコルテマスク１枚＋プレミアムフェイス＆デコルテマスク７枚</p>
+            </div>
+          </div>
+          <div class="top-Box-inner-right-eclead-box-middle" data-aos="slide-left" data-aos-duration="1000">
+            <div class="top-Box-inner-right-eclead-box-inner-box-middle">
+              <img class="" src="images/premiumlotion.jpg" alt="プレミアムローション">
+              <p>premium lotion</p>
+              <p>プレミアムローション<br>（化粧水）</p>
+            </div>
+            <div class="top-Box-inner-right-eclead-box-inner-box-middle">
+              <img class="" src="images/premiumessence.jpg" alt="プレミアムエッセンス">
+              <p>premium essence</p>
+              <p>プレミアムエッセンス<br>（美容液）</p>
+            </div>
+            <div class="top-Box-inner-right-eclead-box-inner-box-middle">
+              <img class="" src="images/premiumemulsion.jpg" alt="プレミアムエマルジョン">
+              <p>premium emulsion</p>
+              <p>プレミアムエマルジョン<br>（クリーム）</p>
+            </div>
+          </div>
+          <div class="top-Box-inner-right-eclead-box-down" data-aos="slide-right" data-aos-duration="1000">
+            <div class="top-Box-inner-right-eclead-box-inner-box-down">
+              <img class="" src="images/premiumfacemask.jpg" alt="プレミアムフェイスマスク">
+              <p>premium face & decollete mask</p>
+              <p>プレミアムフェイス＆デコルテマスク<br>（７枚セット）</p>
+            </div>
+            <div class="top-Box-inner-right-eclead-box-inner-box-down">
+              <img class="" src="images/trialset.jpg" alt="プレミアムシリーズトライアルセット">
+              <p>trial set</p>
+              <p>トライアルセット<br>化粧水×２＋美容液＋クリーム</p>
+            </div>
+          </div>
+          <div class="top-Box-inner-right-eclead-box-up" data-aos="slide-left" data-aos-duration="1000">
+            <div class="top-Box-inner-right-eclead-box-inner-box-up">
+              <img class="" src="images/premiumseries.jpg" alt="プレミアムシリーズセット">
+              <p>premium series set</p>
+              <p>プレミアムシリーズセット<br><br>ローション１本＋エッセンス１本＋エマルジョン１本＋フェイス＆デコルテマスク１枚</p>
+            </div>
+          </div>
+
+          <div class="top-more-btn-box" data-aos="fade-up"　data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+            <a class="more-btn BackOG textWhite" href="eclead.html" >さらに詳しく</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-Box-inner-LRbox">
+        <div class="top-Box-inner-left60" data-aos="fade-up-left" data-aos-duration="1000">
+          <img class="" src="images/eclead_03.jpg" alt="女性01">
+         </div>
+        <div class="top-Box-inner-left40" data-aos="slide-right" data-aos-duration="1000">
+          <p><span class="underline-red-bold">温泉旅に出た翌朝</span>のようなしっとりとした肌「極潤」を実感</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="story-Box btn-show">
+      <div class="story-Box-inner-top">
+        <h3 data-aos="slide-right" data-aos-duration="1000">エクリードの三種の神器</h3>
+        <div class="story-Box-text"  data-aos="slide-left" data-aos-duration="1000">
+          <p>古代から連綿と現代に伝わる「草薙の剣」（くさなぎのつるぎ）、「八尺瓊勾玉」（やさかにのまがたま）、「八咫鏡」（やたのかがみ）は三種の神器と呼ばれ、日本国の象徴である天皇家に受け継がれてきました。第一代神武天皇をお祀りしている橿原神宮が命名した「ことほぎ温泉」から生まれた「エクリード」プレミアムシリーズもその精神を受け継いでいます。</p>
+        </div>
+      </div>
+      <div class="story-Box-inner">
+        <div class="story-Box-inner-box-img">
+          <img class="" src="images/eclead_story.jpg" alt="プレミアムシリーズセット">
+          <div class="story-Box-inner-box-img-1" data-aos="slide-left" data-aos-duration="1000">
+            <img class="" src="images/kusanagi.png" alt="草薙の剣">
+          </div>
+          <div class="story-Box-inner-box-img-2" data-aos="zoom-in-up" data-aos-delay="200"  data-aos-duration="1000">
+            <img class="" src="images/yata.png" alt="八咫鏡">
+          </div>
+          <div class="story-Box-inner-box-img-3" data-aos="slide-right" data-aos-duration="1000">
+            <img class="" src="images/yasakani.png" alt="八尺瓊勾玉">
+          </div>
+        </div>
+        <div class="story-Box-inner-box">
+          <div class="story-Box-inner-box-33-1"  data-aos="fade-down-right">
+            <p class="story-Box-inner-box-33-midasi mincho">草薙の剣　</p>
+            <p class="text-t textC">水道水の１／３０<br>細かい粒子の<br>温泉水がベース</p>
+            <p class="textC textBold">肌の角質層に浸透</p>
+            <div class="container-1">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+          </div>
+          <div class="story-Box-inner-box-33-2" data-aos="fade-down">
+            <p class="story-Box-inner-box-33-midasi mincho">八咫鏡　　</p>
+            <p class="text-t textC">天然ミネラル<br>豊富な温泉水を<br>５倍に濃縮</p>
+            <p class="textC textBold">肌への効能UP</p>
+            <div class="container-2">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+          </div>
+          <div class="story-Box-inner-box-33-3"  data-aos="fade-down-left">
+            <p class="story-Box-inner-box-33-midasi mincho">八尺瓊勾玉</p>
+            <p class="text-t textC">７０種類以上の<br>美容成分を<br>贅沢に配合</p>
+            <p class="textC textBold">肌を整える</p>
+            <div class="container-3">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-Box">
+        <div class="story-Box-inner-LRbox">
+          <div class="story-Box-inner-left" data-aos="zoom-out-up" data-aos-duration="1000">
+            <img class="" src="images/eclead_02.jpg" alt="女性02">
+          </div>
+          <div class="story-Box-inner-right" data-aos="zoom-in-up" data-aos-duration="1000">
+            <h3>神秘の次世代基礎化粧品<br>ー時を超えるからだへー</h3>
+          </div>
+        </div>
+      </div>
+      <div class="story-Box-inner-under-box">
+        <h4><span>ECLEAD</span></h4>
+        <img class="" src="images/eclead_01.jpg" alt="エクリードプレミアムシリーズ">
+        <div class="top-more-btn-box" data-aos="fade-up"　data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+          <a class="more-btn BackOG textWhite" href="eclead.html" >さらに詳しく</a>
+        </div>
+      </div>
+    </div>
+    <a  href="https://cart.jool.co.jp/merchandises?merchandise_category_ids[]=1" class="fixed-btn_area-eclead">Ecleadを購入</a>
+      
+  </section>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<section>
+    <div class="contact-plus-Box" data-aos="slide-down" data-aos-duration="1000">
+      <h2>お問い合わせ</h2>
+      <div class="contact-plus-Box-inner-box">
+        <p class="">ご質問など、お気軽にお問い合わせいただけます。</p>
+        <p><span>0120-32-1646</span>（美に色白）</p>
+        <p>受付時間は、祝日・年末年始を除く月～金の9:00～17:00です。</p>
+        <div >
+          <a href="contact.html" class="">メールでのお問い合わせはこちらへ(24時間受付）</a>
+        </div>
+      </div>
+    </div>
+</section>
+  <section class="target-area-water">
+
+    <div class="top-Box">
+      <div class="top-Box-inner-top">
+        <h2 id="water">Water</h2>
+      </div>
+        <h3  data-aos="slide-right" data-aos-duration="1000"><span>ナチュラルミネラルウォーター</span><br>温泉水「Kotohogi」</h3>
+      <div class="top-Box-text">
+        <p class="top-Box-text" data-aos="slide-left"  data-aos-duration="1000">「JAPAN AQUA AWARDS 2022」で金賞を受賞。肌の水分バランスを整え美肌に導く「メタケイ酸」、肌の自然治癒を促す「メタホウ酸」、抗酸化作用があり身体の老化を防ぐ「炭酸水素イオン」、肌のすき間を埋めて保水し、肌に弾力を与える「シリカ」をはじめとした豊富な天然ミネラル成分をそのままカラダに摂取することができ、利尿作用によるデトックス、豊富なナトリウムによる熱中症予防やダイエット効果に期待できます。ことほぎ温泉の温泉水は、高級基礎化粧品「エクリードプレミアムシリーズ」の主原料としても使用しており、水道水の粒子と比較して30分の1しかない細かな粒子が特徴の一つです。</p>
+      </div>
+
+      <div class="top-Box-inner-LRbox">
+        <div class="top-Box-inner-left-water" data-aos="slide-right" data-aos-duration="1000">
+          <img class="" src="images/water_01.jpg" alt="温泉水「Kotohogi」">
+        </div>
+        <div class="top-Box-inner-right-water" data-aos="slide-left" data-aos-duration="1000">
+          <h4>「JAPAN AQUA AWARDS 2022」金賞を受賞</h4>
+          <img class="" src="images/kotohogi_logo_blue.png" alt="温泉水「Kotohogi」">
+          <div class="top-Box-inner-right-water-box">
+            <div class="top-Box-inner-right-water-box-inner-box">
+              <img class="" src="images/kotohogiwater.jpg" alt="温泉水「Kotohogi」">
+            </div>
+          </div>
+          <div class="top-more-btn-box">
+            <a class="more-btn BackDB textWhite" href="https://kotohogi-water.com/" >さらに詳しく</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-Box-inner-LRbox">
+        <div class="top-Box-inner-left-water-text" data-aos="slide-right" data-aos-duration="1000">
+          <p class="textBlue">「飲みやすい軟水」<br>「透明感のあるクリアな味わい」<br><span>美を追求する方々のアンチエイジングや、疲労回復を目指すアスリートにおすすめ</span></p>
+        </div>
+      </div>
+      <div class="top-Box-inner-under-water-box">
+        <img class="" src="images/water_03.jpg" alt="温泉水「Kotohogi」">
+      </div>
+    </div>
+    <a  href="https://cart.jool.co.jp/merchandises?merchandise_category_ids[]=6" class="fixed-btn_area-water">温泉水「Kotohogi」を購入</a>
+     
+  </section>
+
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<section>
+    <div class="contact-plus-Box" data-aos="slide-down" data-aos-duration="1000">
+      <h2>お問い合わせ</h2>
+      <div class="contact-plus-Box-inner-box">
+        <p class="">ご質問など、お気軽にお問い合わせいただけます。</p>
+        <p><span>0120-32-1646</span>（美に色白）</p>
+        <p>受付時間は、祝日・年末年始を除く月～金の9:00～17:00です。</p>
+        <div >
+          <a href="contact.html" class="">メールでのお問い合わせはこちらへ(24時間受付）</a>
+        </div>
+      </div>
+    </div>
+</section>
+  <section id="profile">
+
+    <div class="profile-Box" data-aos="zoom-in-up" data-aos-duration="1000">
+      <div class="profile-Box-inner-top">
+        <H3>COMPANY PROFILE</H3>
+        <div class="profile-Box-inner-top-box">
+          <dl class="clearfix">
+            <dt>商号</dt><dd>ジェイオール株式会社</dd>
+            <dt>設立</dt><dd>2019年4月5日</dd>
+            <dt>所在地</dt><dd>〒639-2261　奈良県御所市城山台166-5（<a href="https://goo.gl/maps/U3RP3r5wjY13wQ12A" target="_blank">GoogleMap</a>）</dd>
+            <dt>TEL</dt><dd>0745-43-5104</dd>
+            <dt>資本金</dt><dd>3,000万円</dd>
+            <dt>事業内容</dt><dd>化粧品製造販売</dd>
+            <dt>代表取締役</dt><dd>山本　譲二</dd>
+            <dt>アジア戦略拠点</dt><dd>バンコク（タイ）</dd>
+            <dt>グループ</dt><dd><a href="https://www.yamamoto-group.co.jp/" target="_blank">山本商事株式会社</a>　<a href="https://www.naradenryoku.co.jp/" target="_blank">奈良電力株式会社</a></dd>
+          </dl>
+        </div>
+       </div>
+    </div>
+         
+  </section>
+
+  </div><!-- /main -->
+
+
+  
+<footer>
+  <div class="footer-sns-box">
+    <p>FOLLOW US</p>
+    <ul>
+      <li><i class="fa fa-instagram" aria-hidden="true"></i>
+        <ul>
+          <li><a href="https://www.instagram.com/eclead.official" target="_blank">ECLEAD</a></li>
+          <li><a href="https://www.instagram.com/kotohogi.official" target="_blank">WATER</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.facebook.com/eclead.jool" target="_blank" ><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/jool_official" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class=" footer-box">
+    <div class="footer-box-inner50">
+      <a href="contact.html">CONTACT US</a>
+    </div>
+    <div class="footer-box-inner50">
+      <a href="policy.html">PRIVACY POLICY</a>
+    </div>
+  </div>
+  <div class="footer-adress">
+    <p>ジェイオール株式会社<br>〒639-2261　奈良県御所市城山台166-5</p>
+  </div>
+  <div class="footer-copyright">
+    <p>Copyright &copy; 2022 JOOL,Ltd. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="totop">
+  <a href="#"><i class="fa fa-angle-up fa-2x mg-t5" aria-hidden="true"></i><img alt="ロゴ" src="images/logo.png"></a>
+</div><!-- /.totop -->
+</body>
+
+<!-- Mirrored from jool.co.jp/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2023 10:20:56 GMT -->
+</html>
